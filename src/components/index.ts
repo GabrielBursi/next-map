@@ -1,2 +1,1 @@
-export * from './Main'
-export * from './Map'
+export { MapComponent } from './Map/Map'
