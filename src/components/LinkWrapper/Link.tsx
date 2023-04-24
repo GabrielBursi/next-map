@@ -7,8 +7,10 @@ type LinkWrapperProps = {
     children: React.ReactNode
 }
 
-export const LinkWrapper = ({ href, children }: LinkWrapperProps) => (
+const LinkWrapper = ({ href, children }: LinkWrapperProps) => (
     <S.Wrapper>
         <Link href={href}>{children}</Link>
     </S.Wrapper>
 )
+
+export default LinkWrapper
