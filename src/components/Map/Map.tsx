@@ -14,7 +14,7 @@ export type MapProps = {
     places?: Place[]
 }
 
-export const MapComponent = ({places}: MapProps) => {
+const MapComponent = ({places}: MapProps) => {
     return (
         <MapContainer center={[51.505, -0.09]} zoom={3} scrollWheelZoom={false} style={{height: '100%', width: '100%'}}>
             <TileLayer
@@ -35,3 +35,5 @@ export const MapComponent = ({places}: MapProps) => {
         </MapContainer>
     )
 }
+
+export default MapComponent
