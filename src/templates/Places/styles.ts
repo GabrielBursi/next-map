@@ -26,6 +26,7 @@ export const Gallery = styled.div`
     display: grid;
     margin-top: var(--medium);
     img {
+        margin-bottom: var(--medium);
         background: #f6f7f8;
         background-image: linear-gradient(
         to right,
@@ -44,14 +45,5 @@ export const Gallery = styled.div`
             background-position: 40rem 0;
         }
         }
-    }
-`
-
-export const Caption = styled.p`
-    font-size: var(--small);
-    color: var(--grey);
-    margin-bottom: var(--medium);
-    a {
-        font-size: var(--small);
     }
 `
