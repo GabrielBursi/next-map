@@ -1,7 +1,9 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { DefaultSeo } from 'next-seo';
 import NextNProgress from 'nextjs-progressbar';
 import GlobalStyles from 'styles/global'
+import SEO from '../../next-seo.config'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,6 +22,7 @@ function App({ Component, pageProps }: AppProps) {
           content="mapas com next"
         />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNProgress color="#e20e8d" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
       <Component {...pageProps} />
