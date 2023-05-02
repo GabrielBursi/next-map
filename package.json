@@ -37,7 +37,7 @@
     "@types/styled-components": "^5.1.26",
     "i": "^0.3.7",
     "jest": "^29.5.0",
-    "jest-styled-components": "^7.0.5",
+    "jest-styled-components": "^7.1.1",
     "npm": "^9.6.5",
     "plop": "^3.0.5",
     "typescript": "^5.0.4",
