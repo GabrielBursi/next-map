@@ -3,8 +3,8 @@ const withPWA = require('next-pwa')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withPWA({
-  swcMinify: true,
-  experimental: {
+  chunks: true,
+  exclude: {
     // Enables the styled-components SWC transform
     styledComponents: true
   },
@@ -16,3 +16,9 @@ module.exports = withPWA({
     domains: ['media.graphassets.com']
   }
 })
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    domains: ['media.graphassets.com']
+  },
+}

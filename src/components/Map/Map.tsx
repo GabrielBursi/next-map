@@ -39,7 +39,7 @@ const CustomTileLayer = () => {
 const MapComponent = ({places}: MapProps) => {
 
     const router = useRouter()
-
+    
     return (
         <S.MapWrapper>
             <MapContainer

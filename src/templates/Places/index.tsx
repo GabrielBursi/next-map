@@ -77,7 +77,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
                                     width={image.width}
                                     height={image.height}
                                     quality={75}
-                                />
+                                />  
                                 <br></br>
                             </>
                         ))}
